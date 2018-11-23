@@ -1,1 +1,0 @@
-/Users/katoukenta/.zprezto/runcoms/zshrc
