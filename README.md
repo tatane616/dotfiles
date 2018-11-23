@@ -5,5 +5,5 @@
 
 ## Usage
 
-1. clone this repo in your home directory
+1. clone this repo in your HOME directory
 2. `./dotfilesLink.sh`
