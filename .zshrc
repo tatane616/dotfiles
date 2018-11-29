@@ -1,4 +1,4 @@
-# 日本語
+# Japanese
 export LANG=ja_JP.UTF-8
 
 # nodebrew
