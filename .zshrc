@@ -25,7 +25,10 @@ export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 
 # alias
 alias ga='git add .'
+alias gd='git diff'
+alias gs='git status'
 alias gcm='git commit -m'
+alias gco='git checkout'
 
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
