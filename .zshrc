@@ -1,4 +1,4 @@
-# 日本語
+# Japanese
 export LANG=ja_JP.UTF-8
 
 # nodebrew
@@ -15,16 +15,17 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 # Go
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:/usr/local/go/bin
 
 # postgres
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 
-# rbenv
-eval "$(rbenv init -)"
-
 # alias
 alias ga='git add .'
+alias gd='git diff'
+alias gs='git status'
 alias gcm='git commit -m'
+alias gco='git checkout'
 
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
