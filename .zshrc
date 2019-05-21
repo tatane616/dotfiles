@@ -5,6 +5,7 @@ export LANG=ja_JP.UTF-8
 export NODEBREW_HOME=/usr/local/var/nodebrew/current
 export NODEBREW_ROOT=/usr/local/var/nodebrew
 export PATH=$PATH:$NODEBREW_HOME/bin
+export PATH=$PATH:$HOME/.nodebrew/current/bin
 
 # Android
 export ANDROID_HOME=$HOME/Library/Android/sdk
@@ -21,7 +22,8 @@ export PATH=$PATH:/usr/local/go/bin
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 
 # alias
-alias ga='git add .'
+alias git="hub"
+alias ga='git add'
 alias gd='git diff'
 alias gs='git status'
 alias gcm='git commit -m'
@@ -71,3 +73,7 @@ setopt prompt_subst
 
 # プロンプトの右側(RPROMPT)にメソッドの結果を表示させる
 RPROMPT='`rprompt-git-current-branch`'
+
+# Editors
+export EDITOR='vim'
+export VISUAL='vim'
