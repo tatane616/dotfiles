@@ -19,11 +19,6 @@ export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 
 # alias
 alias git="hub"
-alias ga='git add'
-alias gd='git diff'
-alias gs='git status'
-alias gcm='git commit -m'
-alias gco='git checkout'
 alias ll='ls -a'
 alias gcd='cd $(ghq root)/$(ghq list | peco)'
 

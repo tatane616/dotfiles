@@ -1,0 +1,19 @@
+[user]
+  name = tatane
+  email = sunnytj39@gmail.com
+
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  log = log --stat
+
+[core]
+  editor = vim
+
+[includeIf "gitdir:~/src/github.com/blue-agency/**"]
+  path = ~/.gitconfig-stadium
+
+[ghq]
+  root = ~/src
