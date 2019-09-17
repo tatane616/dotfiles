@@ -48,7 +48,7 @@ module.exports = {
     copyOnSelect: false,
     defaultSSHApp: true,
     hypercwd: {
-      initialWorkingDirectory: "~/Development"
+      initialWorkingDirectory: "~/"
     }
     // if `true` (without backticks and without quotes), on right click selected text will be copied or pasted if no
     // selection is present (`true` by default on Windows and disables the context menu feature)
