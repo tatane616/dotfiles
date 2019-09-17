@@ -16,7 +16,3 @@ brew bundle
 # git
 ln -vsf ${PWD}/.gitconfig ${HOME}
 ln -vsf ${PWD}/.gitconfig-stadium ${HOME}
-
-# ghq
-mkdir ~/src
-git config --global ghq.root ~/src
