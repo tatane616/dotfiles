@@ -7,4 +7,4 @@
 ## Usage
 
 1. clone this repo in your HOME directory
-2. `./dotfilesLink.sh`
+2. `./init.sh`
