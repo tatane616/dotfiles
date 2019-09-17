@@ -2,10 +2,7 @@
 export LANG=ja_JP.UTF-8
 
 # nodebrew
-export NODEBREW_HOME=/usr/local/var/nodebrew/current
-export NODEBREW_ROOT=/usr/local/var/nodebrew
-export PATH=$PATH:$NODEBREW_HOME/bin
-export PATH=$PATH:$HOME/.nodebrew/current/bin
+export PATH=/usr/local/var/nodebrew/current/bin:$PATH
 
 # Android
 export ANDROID_HOME=$HOME/Library/Android/sdk
@@ -14,9 +11,8 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # Go
-export GOPATH=$HOME/go
+export GOPATH=$HOME
 export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:/usr/local/go/bin
 
 # postgres
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
@@ -28,6 +24,8 @@ alias gd='git diff'
 alias gs='git status'
 alias gcm='git commit -m'
 alias gco='git checkout'
+alias ll='ls -a'
+alias gcd='cd $(ghq root)/$(ghq list | peco)'
 
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
