@@ -8,6 +8,7 @@
   st = status
   br = branch
   log = log --stat
+  rm = rm -i
 
 [core]
   editor = vim
