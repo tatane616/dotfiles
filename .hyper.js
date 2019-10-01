@@ -41,7 +41,7 @@ module.exports = {
       lightCyan: "#68FDFE",
       lightWhite: "#FFFFFF"
     },
-    shell: "/bin/zsh",
+    shell: "/usr/local/bin/zsh",
     shellArgs: ["--login"],
     env: { LANG: "ja_JP.UTF-8" },
     bell: "SOUND",

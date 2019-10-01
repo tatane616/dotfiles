@@ -1,4 +1,5 @@
 #!/bin/sh
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # vim
 ln -vsf ${PWD}/.vimrc ${HOME}
