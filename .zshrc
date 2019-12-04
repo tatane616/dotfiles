@@ -11,7 +11,7 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # Go
-export GOPATH=$HOME
+export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
 # postgres

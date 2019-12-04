@@ -17,4 +17,4 @@
   path = ~/.gitconfig-stadium
 
 [ghq]
-  root = ~/src
+  root = ~/go/src
