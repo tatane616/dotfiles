@@ -1,3 +1,6 @@
 [user]
   name = tatane (kenta kato)
   email = kenta.kato@stadium.co.jp
+
+[url "git@github.com:"]
+  insteadOf = https://github.com/
