@@ -13,6 +13,7 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 # Go
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+export GOPRIVATE=github.com/blue-agency
 
 # postgres
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
