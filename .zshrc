@@ -1,5 +1,5 @@
-# Japanese
-export LANG=ja_JP.UTF-8
+# Language
+export LANG=en_US.UTF-8
 
 # nodebrew
 export PATH=/usr/local/var/nodebrew/current/bin:$PATH
@@ -23,6 +23,7 @@ alias git="hub"
 alias ll='ls -a'
 alias gcd='cd $(ghq root)/$(ghq list | peco)'
 alias dws-chrome='open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --user-data-dir="/tmp/chrome_dev_test" --disable-web-security'
+alias br-clean="git br --merged | grep -v master | xargs git br -D"
 
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
