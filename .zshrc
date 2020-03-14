@@ -11,7 +11,7 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # Go
-export GOPATH=$HOME/go
+export GOPATH=$HOME/src
 export PATH=$PATH:$GOPATH/bin
 export GOPRIVATE=github.com/blue-agency
 
