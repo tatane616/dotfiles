@@ -17,7 +17,7 @@
   path = ~/.gitconfig-stadium
 
 [ghq]
-  root = ~/src
+  root = ~/go
 
 [url "git@github.com:"]
   insteadOf = https://github.com/
