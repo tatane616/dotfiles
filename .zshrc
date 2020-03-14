@@ -1,5 +1,5 @@
-# Japanese
-export LANG=ja_JP.UTF-8
+# Language
+export LANG=en_US.UTF-8
 
 # nodebrew
 export PATH=/usr/local/var/nodebrew/current/bin:$PATH
@@ -22,6 +22,8 @@ export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 alias git="hub"
 alias ll='ls -a'
 alias gcd='cd $(ghq root)/$(ghq list | peco)'
+alias dws-chrome='open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --user-data-dir="/tmp/chrome_dev_test" --disable-web-security'
+alias br-clean="git br --merged | grep -v master | xargs git br -D"
 
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
@@ -79,3 +81,10 @@ if [ -f ~/.gnupg/.gpg-agent-info ] && [ -n "$(pgrep gpg-agent)" ]; then
 else
     eval $(gpg-agent --daemon)
 fi
+
+# direnv
+eval "$(direnv hook zsh)"
+
+alias getkt="grpcurl -plaintext -d '{\"key\":\"eyJhbGciOiJFUzUxMiIsImtpZCI6IjIzODk0NzFkYjc1NWRlODM1Y2E2N2Q0OWEwNTE4ZjgwMDAzZjQ4ZCJ9.eyJleHAiOjE4ODc1OTk2OTYsInN1YiI6Il9kZXZlbG9wZXIifQ.AGnE_0r-VF0nM2Ls71PWGUuflNM6Td0T-B7faZFrA27_pg1A2y7YfVvpFjEM11vkQeBxAlFv0m4naxd22cjLsCH4AUIxJQsmpWRxC5JM5fto3QIzh7V-CO2gCze1KCg_mqYGiTbkLqCHlKKK1WB1TSk33UbwDrQ_6Lq4_oOQ6ohWylLO\"}' -import-path=$GOPATH/src/github.com/blue-agency/proton/proto -import-path=$GOPATH/src/github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis -proto api_token_service.proto kyber.local.k8s.blag.cc:20080 proton.APITokenService/GetToken | jq -r .token"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
