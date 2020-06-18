@@ -9,6 +9,8 @@
   br = branch
   log = log --stat
   rm = rm -i
+  pH = push origin HEAD
+  sw = switch
 
 [core]
   editor = vim
